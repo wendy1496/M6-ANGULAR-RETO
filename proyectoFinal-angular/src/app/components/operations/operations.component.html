@@ -1,0 +1,21 @@
+<div class="operations-container">
+    <h2>Realizar Operación</h2>
+    <form [formGroup]="transaccionForm" (ngSubmit)="enviarTransaccion()">
+        <div class="form-group">
+            <label for="operationType">Tipo de operación:</label>
+            <select formControlName="tipo">
+                <option value="deposito">Depósito</option>
+                <option value="retiro">Retiro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" placeholder="Ingrese el monto" formControlName="monto">
+        </div>
+
+        <div class="buttons-container">
+            <button type="submit" [disabled]="!transaccionForm.valid">Enviar</button>
+        </div>
+    </form>
+</div>

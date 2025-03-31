@@ -1,0 +1,24 @@
+<div class="navbar-container">
+    <menu>
+      <li *ngFor="let item of menuItems">{{item}}</li>
+    </menu>
+  
+    <nav class="menu-bottom">
+      <div class="menu-left">
+        <div class="logo">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bancolombia_S.A._logo.svg/2560px-Bancolombia_S.A._logo.svg.png" 
+            alt="Bancolombia logo"
+          />
+        </div>
+  
+        <ul class="menu-items">
+          <li *ngFor="let item of bottomMenuItems">
+            <a href="#">{{item}}</a>
+          </li>
+        </ul>
+      </div>
+      <button routerLink="/login" class="login-button">Entrar</button>
+    </nav>
+  </div>
+  

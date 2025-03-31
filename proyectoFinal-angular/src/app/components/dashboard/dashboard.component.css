@@ -1,0 +1,73 @@
+.logo-container {
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background:  #FDDA24;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #ecf0f1;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.saldo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+}

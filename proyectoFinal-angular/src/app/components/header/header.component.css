@@ -1,0 +1,94 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 10px;
+    background-color: #2C2A29;
+  }
+  
+  menu li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px 20px;
+    border-top: 2px solid lightgray;
+  }
+  
+  .menu-left {
+    display: flex;
+    align-items: center;
+    gap: 90px; 
+  }
+  
+  .logo img {
+    height: 30px; 
+    width: auto; 
+    max-width: 200px; 
+  }
+
+  .menu-items {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-items li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu-items li a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    background-color: #FDDA24;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 17px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .login-button:hover {
+    background-color: gold;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu-left {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .login-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

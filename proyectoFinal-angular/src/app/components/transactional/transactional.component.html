@@ -1,0 +1,21 @@
+<div class="transactions-container">
+    <h2>Historial de Transacciones</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número de Cuenta</th>
+                <th>Monto</th>
+                <th>Tipo de Transacción</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let transaccion of historial">
+                <td>{{ transaccion.numeroCuenta }}</td>
+                <td>{{ transaccion.monto | currency:'COP':'symbol':'1.2-2' }}</td>
+                <td>{{ transaccion.tipoTransaccion }}</td>
+                <td>{{ transaccion.fecha | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+              </tr>
+        </tbody>
+    </table>
+</div>

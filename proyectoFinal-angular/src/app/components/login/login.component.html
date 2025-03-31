@@ -1,0 +1,41 @@
+<main>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bancolombia_S.A._logo.svg/2560px-Bancolombia_S.A._logo.svg.png" 
+            alt="Bancolombia logo"
+          />
+  
+      <h5>App Sucursales</h5>
+      <fieldset>
+        <input  name="userName" placeholder="Ingrese su usuario" formControlName="userName">
+        <input  type="password" name="password" placeholder="Ingrese su contraseña" formControlName="password">
+      </fieldset>
+      <button class="submit" type="submit">Continuar</button>
+  
+      <div class="links">
+        <a href="">¿Olvidaste tu usuario o contraseña?</a>
+        <a href=""> ¿Problemas para conectarte?</a>
+      </div>
+      <hr>
+      <div>
+          <div class="info-item">
+            <i class="fas fa-laptop"></i>
+            <a href="">Conoce sobre Sucursal Virtual Personas</a>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-lock"></i>
+            <a href="">Aprende sobre Seguridad</a>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-file-alt"></i>
+            <a href="">Reglamento Sucursal Virtual</a>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-gavel"></i>
+            <a href="">Política de Privacidad</a>
+          </div>
+        </div>
+    </form>
+  </main>
+
+  

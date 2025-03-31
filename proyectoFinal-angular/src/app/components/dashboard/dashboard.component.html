@@ -1,0 +1,19 @@
+<div class="dashboard">
+    <nav class="sidebar">
+        <div class="logo-container">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bancolombia_S.A._logo.svg/2560px-Bancolombia_S.A._logo.svg.png" 
+                alt="Bancolombia logo"
+            />
+        </div>
+        
+        <ul>
+            <li><a routerLink="/dashboard/accounts">Inicio</a></li>
+            <li><a routerLink="/dashboard/operations">Operaciones</a></li>
+            <li><a routerLink="/dashboard/transactional">Historial De Transacciones</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <router-outlet></router-outlet>
+    </main>
+</div>
